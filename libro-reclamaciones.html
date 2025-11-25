@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libro de Reclamaciones - Agallas Barra Cevichera</title>
+    
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Fuente Agallas -->
+    <link href="https://db.onlinewebfonts.com/c/e11b6e8aca5be93f1d52ed7959e54533?family=Display+Art+Three+W90+Regular" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="legal-pages.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand b-movil" href="index.html">
+                    <img src="img/image.png" alt="Agallas Logo" class="header-logo">
+                </a>
+                <!-- Menú Colapsable -->
+                <div class="collapse navbar-collapse" id="agallasNavbar">
+                    <ul class="navbar-nav mx-auto mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">MENÚ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">PROMOS EXCLUSIVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cupones.html">CUPONES</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Iconos -->
+                <div class="quick-access-icons d-flex align-items-center">
+                    <a href="#" class="nav-icon-link">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="tel:+51974156551" class="nav-icon-link">
+                        <i class="fas fa-phone"></i>
+                        <span class="phone-text d-none d-lg-inline-block">Llámanos<br>+51 974 156 551</span>
+                    </a>
+                    <a href="https://wa.me/51974156551" target="_blank" class="nav-icon-link user-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="whatsapp-text d-none d-lg-inline-block">Escríbenos<br>+51 974 156 551</span>
+                    </a>
+                </div>
+                <!-- Botón Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agallasNavbar" aria-controls="agallasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="legal-content">        <div class="container">
+            <div class="legal-container libro">
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i> Volver al Inicio
+                </a>
+                
+                <div class="header-section">
+                    <img src="img/Libro_De_Reclamaciones.webp" alt="Libro de Reclamaciones" class="logo-image">
+                    <h1>Libro de Reclamaciones</h1>
+                    <p class="subtitle">
+                        Conforme a lo establecido en el Código de Protección y Defensa del Consumidor, 
+                        ponemos a tu disposición nuestro Libro de Reclamaciones.
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h4><i class="fas fa-info-circle"></i> Información Importante</h4>
+                    <p>
+                        La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI.
+                        El proveedor deberá dar respuesta al reclamo en un plazo no mayor a treinta (30) días calendario.
+                    </p>
+                </div>
+
+                <form id="reclamacionesForm">
+                    <div class="form-section">
+                        <h3>1. Identificación del Consumidor Reclamante</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombres">Nombres <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="nombres" name="nombres" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="apellidos" name="apellidos" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tipoDocumento">Tipo de Documento <span class="required">*</span></label>
+                                <select class="form-control" id="tipoDocumento" name="tipoDocumento" required>
+                                    <option value="">Seleccionar...</option>
+                                    <option value="DNI">DNI</option>
+                                    <option value="CE">Carnet de Extranjería</option>
+                                    <option value="Pasaporte">Pasaporte</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="numeroDocumento">Número de Documento <span class="required">*</span></label>
+                                <input type="text" class="form-control" id="numeroDocumento" name="numeroDocumento" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="direccion">Dirección <span class="required">*</span></label>
+                            <input type="text" class="form-control" id="direccion" name="direccion" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefono">Teléfono <span class="required">*</span></label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico <span class="required">*</span></label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>2. Identificación del Bien Contratado</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tipoServicio">Tipo de Servicio <span class="required">*</span></label>
+                                <select class="form-control" id="tipoServicio" name="tipoServicio" required>
+                                    <option value="">Seleccionar...</option>
+                                    <option value="Delivery">Delivery</option>
+                                    <option value="Recojo en tienda">Recojo en tienda</option>
+                                    <option value="Consumo en local">Consumo en local</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="fechaConsumo">Fecha del Consumo <span class="required">*</span></label>
+                                <input type="date" class="form-control" id="fechaConsumo" name="fechaConsumo" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="descripcionServicio">Descripción del Servicio/Producto <span class="required">*</span></label>
+                            <textarea class="form-control" id="descripcionServicio" name="descripcionServicio" rows="3" required placeholder="Describa los productos o servicios adquiridos"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="montoReclamado">Monto Reclamado</label>
+                            <input type="number" class="form-control" id="montoReclamado" name="montoReclamado" step="0.01" placeholder="S/ 0.00">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>3. Detalle de la Reclamación y Pedido del Consumidor</h3>
+                        <div class="form-group">
+                            <label for="tipoReclamo">Tipo <span class="required">*</span></label>
+                            <select class="form-control" id="tipoReclamo" name="tipoReclamo" required>
+                                <option value="">Seleccionar...</option>
+                                <option value="Reclamo">Reclamo</option>
+                                <option value="Queja">Queja</option>
+                            </select>
+                            <small class="form-text text-muted">
+                                <strong>Reclamo:</strong> Disconformidad relacionada a los productos o servicios.<br>
+                                <strong>Queja:</strong> Disconformidad no relacionada a los productos o servicios; o, malestar o descontento respecto a la atención al público.
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="detalleReclamo">Detalle del Reclamo <span class="required">*</span></label>
+                            <textarea class="form-control" id="detalleReclamo" name="detalleReclamo" rows="5" required placeholder="Describa detalladamente su reclamo o queja"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="pedidoConsumidor">Pedido del Consumidor <span class="required">*</span></label>
+                            <textarea class="form-control" id="pedidoConsumidor" name="pedidoConsumidor" rows="3" required placeholder="Indique qué solicita que se haga para resolver su reclamo"></textarea>
+                        </div>
+                    </div>                    <div class="form-group text-center">
+                        <button type="submit" class="btn-submit">
+                            <i class="fab fa-whatsapp"></i> Enviar por WhatsApp
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid container">
+            <div class="footer-column accordion-item">
+                <h4 class="accordion-header">
+                    Nuestros Productos
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </h4>
+                <ul class="accordion-content">
+                    <li><a href="menu.html#para-picar">Para Picar</a></li>
+                    <li><a href="menu.html#leche-tigres">LECHE(PARA TIGRES)</a></li>
+                    <li><a href="menu.html#festival-causas">Festival de Causas</a></li>
+                    <li><a href="menu.html#frialdad">Frialdad</a></li>
+                    <li><a href="menu.html#carretilleros">Carretilleros</a></li>
+                    <li><a href="menu.html#trio-agallas">Trio Agallas</a></li>
+                    <li><a href="menu.html#rondas-marinas">Rondas Marinas</a></li>
+                    <li><a href="menu.html#arroces">Arroces</a></li>
+                    <li><a href="menu.html#chaufas">Chaufas</a></li>
+                </ul>
+            </div>
+            <div class="footer-column accordion-item">
+                <h4 class="accordion-header">
+                    Ayuda
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </h4>
+                <ul class="accordion-content">
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <a href="libro-reclamaciones.html" style="text-decoration: none; color: var(--color-primary); text-align: center; display: inline-block;">
+                    <h4>Libro de Reclamaciones</h4>
+                    <img src="img/Libro_De_Reclamaciones.webp" alt="Libro de Reclamaciones" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+                </a>               
+                <h4 class="mt-2">Métodos de Pago</h4>                
+                <ul class="payment-methods">
+                    <li>
+                        <img src="svg/visa-classic-svgrepo-com.svg" alt="Visa" style="width: 40px; height: auto; vertical-align: middle; margin-right: 5px;">
+                        Visa
+                    </li>
+                    <li>
+                        <img src="svg/mastercard-full-svgrepo-com.svg" alt="Mastercard" style="width: 40px; height: auto; vertical-align: middle; margin-right: 5px;">
+                        Mastercard
+                    </li>
+                    <li>
+                        <img src="svg/Yape Logo Vector.svg" alt="Yape" style="width: 40px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                        Yape
+                    </li>
+                </ul>
+                <!-- <h4 class="mt-2">Agallas App</h4> -->
+            </div>
+            <div class="footer-column">
+                <img src="img/Logo Azul.png" alt="Agallas Logo" class="footer-logo">
+                <h4>Síguenos en</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/agallas.barra.cevichera" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@barra.cevichera.agallas"target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/agallas.barra.cevichera/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+   <!-- Botón para Volver Arriba -->
+    <a href="#" id="back-to-top" class="back-to-top-btn" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Script específico para páginas legales -->
+    <script type="module" src="js/main.js"></script>
+      <script>
+        // Funcionalidad del formulario
+        document.getElementById('reclamacionesForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Recopilar datos del formulario
+            const formData = new FormData(this);
+            
+            // Crear mensaje para WhatsApp
+            let mensaje = "📋 *LIBRO DE RECLAMACIONES*\n\n";
+            
+            // 1. Datos del consumidor
+            mensaje += "*1. IDENTIFICACIÓN DEL CONSUMIDOR:*\n";
+            mensaje += `• Nombres: ${formData.get('nombres')}\n`;
+            mensaje += `• Apellidos: ${formData.get('apellidos')}\n`;
+            mensaje += `• Tipo de Documento: ${formData.get('tipoDocumento')}\n`;
+            mensaje += `• Número de Documento: ${formData.get('numeroDocumento')}\n`;
+            mensaje += `• Dirección: ${formData.get('direccion')}\n`;
+            mensaje += `• Teléfono: ${formData.get('telefono')}\n`;
+            mensaje += `• Email: ${formData.get('email')}\n\n`;
+            
+            // 2. Datos del servicio
+            mensaje += "*2. IDENTIFICACIÓN DEL SERVICIO:*\n";
+            mensaje += `• Tipo de Servicio: ${formData.get('tipoServicio')}\n`;
+            mensaje += `• Fecha del Consumo: ${formData.get('fechaConsumo')}\n`;
+            mensaje += `• Descripción: ${formData.get('descripcionServicio')}\n`;
+            if (formData.get('montoReclamado')) {
+                mensaje += `• Monto Reclamado: S/ ${formData.get('montoReclamado')}\n`;
+            }
+            mensaje += "\n";
+            
+            // 3. Detalle del reclamo
+            mensaje += "*3. DETALLE DEL RECLAMO:*\n";
+            mensaje += `• Tipo: ${formData.get('tipoReclamo')}\n`;
+            mensaje += `• Detalle: ${formData.get('detalleReclamo')}\n`;
+            mensaje += `• Pedido del Consumidor: ${formData.get('pedidoConsumidor')}\n\n`;
+            
+            mensaje += "_Fecha de registro: " + new Date().toLocaleDateString('es-PE') + "_";
+            
+            // Codificar mensaje para URL
+            const mensajeCodificado = encodeURIComponent(mensaje);
+            
+            // Número de WhatsApp de Agallas
+            const numeroWhatsApp = "51974156551";
+            
+            // Crear URL de WhatsApp
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`;
+            
+            // Abrir WhatsApp
+            window.open(urlWhatsApp, '_blank');
+            
+            // Mostrar confirmación
+            alert('Su reclamo será enviado por WhatsApp. Nos pondremos en contacto con usted en un plazo máximo de 30 días calendario.');
+        });
+        
+        // Validación adicional para el número de documento
+        document.getElementById('numeroDocumento').addEventListener('input', function(e) {
+            const tipoDoc = document.getElementById('tipoDocumento').value;
+            const numero = e.target.value;
+            
+            if (tipoDoc === 'DNI' && numero.length > 8) {
+                e.target.value = numero.slice(0, 8);
+            }
+        });
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
