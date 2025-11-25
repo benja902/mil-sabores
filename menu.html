@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    
+    <!-- Fuente Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/> 
+    <!-- Fuente Agallas -->
+    <link href="https://db.onlinewebfonts.com/c/e11b6e8aca5be93f1d52ed7959e54533?family=Display+Art+Three+W90+Regular" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!--  BOOTSTRAP  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Mi Hoja de Estilos -->
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style-menu.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand b-movil" href="index.html">
+                    <img src="img/image.png" alt="Agallas Logo" class="header-logo">
+                </a>
+                  <!-- Menu colapsable-->
+                <div class="collapse navbar-collapse" id="agallasNavbar">
+                    <ul class="navbar-nav mx-auto mb-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="menu.html">MENÚ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">PROMOS EXCLUSIVAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cupones.html">CUPONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">LOCALES</a>
+                        </li>
+                    </ul>
+                </div>
+                 <!-- Iconos  -->
+                <div class="quick-access-icons d-flex align-items-center">
+                    <a href="#" class="nav-icon-link">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <a href="tel:+51974156551" class="nav-icon-link">
+                    <i class="fas fa-phone"></i>
+                    <span class="phone-text d-none d-lg-inline-block">Llámanos<br>+51 974 156 551</span>
+                    </a>
+                    <a href="https://wa.me/51974156551"  target="_blank" class="nav-icon-link user-whatsapp">
+                        <i class="fab fa-whatsapp"></i>
+                        <span class="whatsapp-text d-none d-lg-inline-block">Escríbenos<br>+51 974 156 551</span>
+
+                        <!-- <span class="login-text d-none d-lg-inline-block">Hola,<br>Iniciar Sesión</span> -->
+                    </a>
+                    <a href="#" class="cart-icon-container">
+                        <div class="cart-circle">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <span class="cart-price d-none d-lg-inline-block">S/ 0.00</span>
+                    </a>
+                </div>
+                <!-- Botón Hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#agallasNavbar" aria-controls="agallasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    
+        <!-- Navegación de Categorías -->
+        <div class="categories-nav">
+            <div class="container">
+                <ul class="categories-menu">
+                    <li><a href="#para-picar" class="category-item active">Para Picar</a></li>
+                    <li><a href="#leche-tigres" class="category-item">LECHE(PARA TIGRES)</a></li>
+                    <li><a href="#festival-causas" class="category-item">Festival de Causas</a></li>
+                    <li><a href="#frialdad" class="category-item">Frialdad</a></li>
+                    <li><a href="#carretilleros" class="category-item">Carretilleros</a></li>
+                    <li><a href="#trio-agallas" class="category-item">Trio Agallas</a></li>
+                    <li><a href="#rondas-marinas" class="category-item">Rondas Marinas</a></li>
+                    <li><a href="#arroces" class="category-item">Arroces</a></li>
+                    <li><a href="#chaufas" class="category-item">Chaufas</a></li>
+                    <li><a href="#chicharrones" class="category-item">Chicharrones</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección: Para Picar -->
+        <section id="para-picar" class="py-4">
+            <div class="container px-3"> 
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Para Picar</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/tequeños-queso.png" alt="Tequeños de queso">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tequeños de queso X 8 UNID</h3>
+                            <p>Deliciosos tequeños rellenos de queso, crujientes por fuera y suaves por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 20</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 2: Tequeños de atún -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/tequeños-atun.png" alt="Tequeños de atún">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tequeños de atún X 8 UNID</h3>
+                            <p>Crujientes tequeños rellenos de atún, una combinación perfecta para compartir.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 25</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 3: Pulpo Parmesano -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/para-picar/pulpo-a-la-parmesana.png" alt="Pulpo Parmesano">
+                        </div>
+                        <div class="card-content">
+                            <h3>Pulpo Parmesano</h3>
+                            <p>Pulpo fresco preparado con queso parmesano, una delicia del mar con sabor único.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 4: Choritos a la chalaca -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/choritos-chalaca.png" alt="Choritos a la chalaca">
+                        </div>
+                        <div class="card-content">
+                            <h3>Choritos a la chalaca</h3>
+                            <p>Mix de verduras y choro bañado en leche de tigre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 20</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 5: Mariscos a la chalaca -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/mariscos-chalaca.png" alt="Mariscos a la chalaca">
+                        </div>
+                        <div class="card-content">
+                            <h3>Mariscos a la chalaca</h3>
+                            <p>Mix de mixturas, punta de acides, ají limo y su leche de tigre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 20</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sección: leche-tigres -->
+        <section id="leche-tigres" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">LECHE(PARA TIGRES)</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Producto 1: Leche Carretillero -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/lechedetigre.png" alt="Leche Carretillero">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche Carretillero</h3>
+                            <p>Pota y pescado, acompañado de chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 17.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 2: Leche Huanuqueño -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/lechedetigre.png" alt="Leche Huanuqueño">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche Huanuqueño</h3>
+                            <p>Leche + papa rellena</p>
+                            <div class="price">
+                                <span class="current-price">S/ 17.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 3: Leche a lo Agallas -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/leche-a-lo-agallas.png" alt="Leche a lo Agallas">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche a lo Agallas</h3>
+                            <p>Pescado y langostino, en crema de ají amarillo, acompañado de chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 19.50</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 4: Leche Afrodisiaca -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/lechedetigre.png" alt="Leche Afrodisiaca">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche Afrodisiaca</h3>
+                            <p>Mix de mariscos y pescado, acompañado de chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 25.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 5: Leche a lo Chalaco (Copón) -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/leche-a-lo-chalaco.jpg" alt="Leche a lo Chalaco">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche a lo Chalaco (Copón)</h3>
+                            <p>En una copa grande con pescado y mixtura, acompañado con su chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 6: Leche Pantera -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/lechedetigre.png" alt="Leche Pantera">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche Pantera</h3>
+                            <p>Conchas tumbesinas a punto de limón, ají limo y leche de tigre, acompañado de chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 7: Leche con Langostinos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/lechedetigre.png" alt="Leche con Langostinos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Leche con Langostinos</h3>
+                            <p>Langostinos bien sazonados bañados en leche de tigre, acompañado de chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 28.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 8: Trio lechero -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/leche/trio-lechero.jpg" alt="Trio lechero">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio lechero</h3>
+                            <p>Amarillo, crema de rocoto y el clásico, con su toque DE AJI y perfumado en culantro Y LIMON</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Sección: festival-causas -->
+        <section id="festival-causas" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Festival de Causas</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Producto: Causa Acevichada -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                        
+                            <img src="img/festival-causas/causas.png" alt="Causa Acevichada">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa Acevichada</h3>
+                            <p>Causa tradicional, relleno con palta, crema de casa y su cevichito.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 25.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 2: Causa Achorada -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                     
+                            <img src="img/festival-causas/causas.png" alt="Causa Achorada">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa Achorada</h3>
+                            <p>Causa agradable, acompañada con ceviche y chicharrón de pescado.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 28.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 3: Causa con frutos del mar -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                          
+                            <img src="img/festival-causas/causas.png" alt="Causa con frutos del mar">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con frutos del mar</h3>
+                            <p>Causa tradicional, relleno con palta, crema de casa y un rico ceviche de langostino.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 4: Causa Bien Peruana -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            
+                            <img src="img/festival-causas/causa-bien-peruana.png" alt="Causa Bien Peruana">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa Bien Peruana</h3>
+                            <p>Causa tradicional, montado en chicharrón de pescado, salsa golf y acompañado de shot de leche de tigre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 28.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 5: Causa con pulpa de cangrejo -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            
+                            <img src="img/festival-causas/causas.png" alt="Causa con pulpa de cangrejo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con pulpa de cangrejo</h3>
+                            <p>Causa agradable y tradicional, rellena de palta, coronado con pulpa de cangrejo, acompañado con su shot de leche de tigre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 6: Causa con langostino -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                          
+                            <img src="img/festival-causas/causas.png" alt="Causa con langostino">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con langostino</h3>
+                            <p>Causa tradicional, relleno de palta y langostino, bañado en salsa a lo agallas golf.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    
+                    <!-- Producto 7: Causa con langostinos al panko -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            
+                            <img src="img/festival-causas/causas.png" alt="Causa con langostinos al panko">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con langostinos al panko</h3>
+                            <p>Causa con relleno y palta, acompañada de langostinos fritos al panko y salsa de la casa.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 29.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 8: Causa con Pulpo a la Parrilla -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/festival-causas/causa-con-pulpo-parilla.jpg" alt="Causa con Pulpo a la Parrilla">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con pulpo a la parrilla</h3>
+                            <p>Causa tradicional, relleno de palta, coronado con pulpo parrillero y su criolla.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 37.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 9: Causa del Barrio -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/festival-causas/causas.png" alt="Causa del Barrio">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa del Barrio</h3>
+                            <p>Causa + leche de tigre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 26.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 10: Causa con Pulpo al Olivo -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/festival-causas/causa-con-pulpo-al-olivo.png" alt="Causa con Pulpo al Olivo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa con pulpo al olivo</h3>
+                            <p>Causa tradicional, relleno de palta, coronado con pulpo al olivo y su criolla.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 37.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 11: Trio de causas -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+
+                            <img src="img/festival-causas/causas.png" alt="Trio de causas">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio de causas</h3>
+                            <p>Con pulpo al olivo, pulpa de cangrejo, langostinos acevichado.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 12: Causa crocante con ceviche de pulpo y langostinos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+
+                            <img src="img/festival-causas/causa-crocante-pulpo-lagostinos.jpg" alt="Causa crocante con ceviche de pulpo y langostinos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa crocante con ceviche de pulpo y langostinos</h3>
+                            <p>Deliciosa Causa al panko con ceviche de pulpo y langostinos.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                    <!-- Producto 13: Causa en salsa de mariscos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+
+                            <img src="img/festival-causas/causas.png" alt="Causa en salsa de mariscos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Causa en salsa de mariscos</h3>
+                            <p>Deliciosa Causa con relleno de palta bañada en salsa de mariscos.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="frialdad" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Frialdad</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Producto: Ceviche Huanuqueño -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche Huanuqueño">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche Huanuqueño</h3>
+                            <p>Tradicional plato Huanuqueño, de papa rellena y su ceviche de pescado de pota.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 17.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche de pescado -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche de pescado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche de pescado</h3>
+                            <p>Pescado, sal, limón, ajíes, bañado en leche de tigre y acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche mixto -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche mixto">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche mixto</h3>
+                            <p>Pescado y mixtura afirmada en sal, limón, ají, bañado en leche de tigre acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche de conchas negras -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/ceviche-de-conchas-negras.png " alt="Ceviche de conchas negras">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche de conchas negras</h3>
+                            <p>Conchas negras tumbesinas salpimentadas en ajo, limón, y ají limo, acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche de la esquina -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche de la esquina">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche de la esquina</h3>
+                            <p>Delicioso ceviche carretillero limeño de pescado y pota mas chicharrón de pota, acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche de pulpo -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche de pulpo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche de pulpo</h3>
+                            <p>Salpimentado, limón, ají, culantro, acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche clasico universitario y Alianza -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche clasico universitario y Alianza">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche clasico universitario y Alianza</h3>
+                            <p>Ceviche de pescado en dos versiones bien bravas punta de limón, sal, camote, ají limo y leche de tigre, acompañado con chicharrón de pota, camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Ceviche de pulpa y langostino -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Ceviche de pulpa y langostino">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ceviche de pulpa y langostino</h3>
+                            <p>Delicia de leche de tigre con mezcla de pulpa, langostino, sal, ají limo, acompañado de camote y choclo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Tiradito clasico -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Tiradito clasico">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tiradito clasico</h3>
+                            <p>Filete de pescado, bañado en leche de tigre, salpimentado, ají limo, culantro y ají amarillo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Tiradito a lo agalla -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/frialdad.png " alt="Tiradito a lo agalla">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tiradito a lo agalla</h3>
+                            <p>Filete de pescado con pulpa y langostino, sin limón, bañado en crema de ají amarillo.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 39.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Producto: Pulpo al olivo -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/frialdad/pulpo-al-olivo.png" alt="Pulpo al olivo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Pulpo al olivo</h3>
+                            <p>Láminas de pulpo bañadas en limón, culantro, ají limo, bañado en salsa olivada, acompañado de galletas saladas.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+         <section id="carretilleros" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Carretilleros</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Carretillero 1 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 1">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 1</h3>
+                            <p>Ceviche de pescado + chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 2 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/arroz-con-mariscos.png" alt="Carretillero 2">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 2</h3>
+                            <p>Ceviche de pescado + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 3 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 3">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 3</h3>
+                            <p>Ceviche de pescado + chaufa de mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 4 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 4">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 4</h3>
+                            <p>Ceviche de pescado + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 5 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 5">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 5</h3>
+                            <p>Chaufa de mariscos + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 6 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 6">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 6</h3>
+                            <p>Arroz con mariscos + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 7 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 7">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 7</h3>
+                            <p>Leche de Tigre + Arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 8 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 8">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 8</h3>
+                            <p>Leche de Tigre + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 9 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 9">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 9</h3>
+                            <p>Leche de Tigres + chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 10 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 10">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 10</h3>
+                            <p>Ceviche mixto + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 11 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 11">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 11</h3>
+                            <p>Ceviche de pescado + chicharrón de mixto</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 12 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 12">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 12</h3>
+                            <p>Causa acevichada + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 13 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 13">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 13</h3>
+                            <p>Ceviche de pescado + chaufa de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Carretillero 14 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/carretillero.png" alt="Carretillero 14">
+                        </div>
+                        <div class="card-content">
+                            <h3>Carretillero 14</h3>
+                            <p>Leche de tigre + arroz con langostino</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+         <section id="trio-agallas" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Trio Agallas</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Trio Agallas 1 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 1">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 1</h3>
+                            <p>Ceviche de pescado + arroz con mariscos + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 2 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 2">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 2</h3>
+                            <p>Ceviche de pescado + chaufa de mariscos + causa</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 3 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 3">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 3</h3>
+                            <p>Leche de tigre + causa + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 4 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 4">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 4</h3>
+                            <p>Ceviche de pescado + causa + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 5 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 5">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 5</h3>
+                            <p>Ceviche de conchas negras + causa + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 6 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 6">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 6</h3>
+                            <p>Chicharrón de camarón + leche de tigre + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 48.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 7 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 7">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 7</h3>
+                            <p>Ceviche de pescado + leche de tigre + chicharrón de pota</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 8 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 8">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 8</h3>
+                            <p>Ceviche de pescado + chaufa de marisco + chicharrón de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 9 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 9">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 9</h3>
+                            <p>Ceviche de langostinos + causa + arroz con mariscos</p>
+                            <div class="price">
+                                <span class="current-price">S/ 48.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Trio Agallas 10 -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/trio-agallas.png" alt="Trio Agallas 10">
+                        </div>
+                        <div class="card-content">
+                            <h3>Trio Agallas 10</h3>
+                            <p>Leche de tigre + causa + chaufa de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+         <section id="rondas-marinas" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Rondas Marinas</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+                    <!-- Producto 1: Combo Papá -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <!-- <span class="discount-tag">51% Off</span> -->
+                            <img src="img/" alt="Combo Papá">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ronda A Lo Agallas</h3>
+                            <p>Causa + arroz con mariscos + chicharrón de pescado + leche de trigre + ceviche de pescado</p>
+                            <div class="price">
+                                <span class="current-price">S/ 80.00</span>
+                                <!-- <span class="old-price">S/ 56.40</span> -->
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 2: Dúo Futbolero -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <!-- <span class="discount-tag">51% Off</span> -->
+                            <img src="img/ " alt="Ronda Fria">
+                        </div>
+                        <div class="card-content">
+                            <h3>Ronda Fria</h3>
+                            <p>Ceviche de pescado + leche de tigre + causa + ceviche de conchas negras + tiradito clásico</p>
+                            <div class="price">
+                                <span class="current-price">S/ 80.00</span>
+                                <!-- <span class="old-price">S/ 55.40</span> -->
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                   
+                </div>
+            </div>
+        </section>
+         <section id="arroces" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Arroces</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <!-- <div class="section-description mb-3">
+                    <p>Nuestros mariscos del norte del país son flameados en mantequilla, vino blanco y salsa madre. Acompañados de sarsa criolla y shot de leche de tigre.</p>
+                </div>
+                 -->
+                <div class="products-grid">
+                    <!-- Arroz con Mariscos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/arroces/arroz-con-mariscos.png" alt="Arroz con Mariscos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arroz con Mariscos</h3>
+                            <p>Delicioso arroz con mariscos flameados en mantequilla, vino blanco y salsa madre.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 32.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Arroz con Conchas Negras -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/arroz-conchas.png" alt="Arroz con Conchas Negras">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arroz con Conchas Negras</h3>
+                            <p>Exquisito arroz preparado con conchas negras, acompañado de sarsa criolla.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 40.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Arroz con Langostino -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/arroz-langostino.png" alt="Arroz con Langostino">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arroz con Langostino</h3>
+                            <p>Arroz preparado con langostinos frescos flameados en mantequilla y vino blanco.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                    
+                    <!-- Arroz Norteño -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/arroz-norteno.png" alt="Arroz Norteño">
+                        </div>
+                        <div class="card-content">
+                            <h3>Arroz Norteño</h3>
+                            <p>Especialidad del norte con mariscos variados, preparado con receta tradicional.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button>
+                    </article>
+                </div>
+            </div>
+        </section>
+       
+        <section id="chaufas" class="py-4">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Chaufas</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <!-- <div class="section-description mb-3">
+                    <p>Salteados al wok con especias orientales y arroz frito. Acompañados de shot de leche de tigre.</p>
+                </div> -->
+                
+                <div class="products-grid">
+                    <!-- Chaufa de Langostino -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chaufa-langostino.png" alt="Chaufa de Langostino">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chaufa de Langostino</h3>
+                            <p>Arroz chaufa salteado al wok con langostinos y especias orientales.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Chaufa de Pescado -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chaufa-pescado.png" alt="Chaufa de Pescado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chaufa de Pescado</h3>
+                            <p>Arroz frito al estilo oriental con pescado fresco y verduras selectas.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 34.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Chaufa de Mariscos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chaufas/chaufa-de-mariscos.png" alt="Chaufa de Mariscos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chaufa de Mariscos</h3>
+                            <p>Delicioso arroz chaufa preparado con mariscos variados y especias orientales.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 32.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Chaufa Mixta -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chaufa-mixta.png" alt="Chaufa Mixta">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chaufa Mixta (Pescado y Mariscos)</h3>
+                            <p>Lo mejor de dos mundos: combinación de pescado y mariscos en nuestro arroz chaufa especial.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38.00</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Sección: Chicharrones -->
+        <section id="chicharrones" class="py-4">
+            <div class="container px-3"> 
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h2 class="section-title">Chicharrones</h2>
+                    <!-- <a href="#" class="view-all">Ver todo</a> -->
+                </div>
+                
+                <div class="products-grid">
+
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de pescado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de pescado</h3>
+                            <p>Deliciosos chicharrones de pescado, crujientes por fuera y suaves por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 2: Chicharron de pota -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de pota">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de pota</h3>
+                            <p>Deliciosos chicharrones de pota, crujientes por fuera y suaves por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 30</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 3: Chicharron de langostino -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de langostino">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de langostino</h3>
+                            <p>Langostinos frescos rebozados y fritos, crujientes por fuera y jugosos por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 4: Chicharron de camarones -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de camarones">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de camarones</h3>
+                            <p>Camarones frescos rebozados y fritos, crujientes por fuera y jugosos por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                    
+                    <!-- Producto 5: Chicharron de calamar -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de calamar">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de calamar</h3>
+                            <p>Calamares frescos rebozados y fritos, crujientes por fuera y suaves por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 20</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                     <!-- Producto 6: Chicharron de pulpo -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de pulpo">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de pulpo</h3>
+                            <p>Pulpo fresco rebozado y frito, crujiente por fuera y tierno por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                     <!-- Producto 7: Chicharron de mariscos -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Chicharron de mariscos">
+                        </div>
+                        <div class="card-content">
+                            <h3>Chicharron de mariscos</h3>
+                            <p>Mezcla de mariscos frescos rebozados y fritos, crujientes por fuera y jugosos por dentro.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 38</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                     <!-- Producto 8: Jalea mixta  -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Jalea mixta">
+                        </div>
+                        <div class="card-content">
+                            <h3>Jalea mixta</h3>
+                            <p>Mezcla de mariscos frescos rebozados y fritos, acompañados de salsa criolla.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 45</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                     <!-- Producto 8: Jalea de pescado  -->
+                    <article class="product-card">
+                        <div class="card-image-container">
+                            <img src="img/chicharrones/" alt="Jalea de pescado">
+                        </div>
+                        <div class="card-content">
+                            <h3>Jalea de pescado</h3>
+                            <p>Pescado fresco rebozado y frito, acompañado de salsa criolla.</p>
+                            <div class="price">
+                                <span class="current-price">S/ 35</span>
+                            </div>
+                            <button class="add-to-cart-btn">Agregar al pedido</button>
+                        </div>
+                        <!-- <button class="favorite-btn" aria-label="Añadir a favoritos"><i class="far fa-heart"></i></button> -->
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Botón para Volver Arriba -->
+    <a href="#" id="back-to-top" class="back-to-top-btn" aria-label="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- Carrito flotante para móviles -->
+    <div class="mobile-cart-container d-md-none">
+        <div class="cart-circle">
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+        <span class="cart-price">S/ 0.00</span>
+    </div>
+    
+    <!-- Modal del carrito -->
+    <div class="cart-modal-overlay" id="cartModalOverlay"></div>
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-header">
+            <h3 class="cart-modal-title">Tu Carrito (<span id="cartItemCount">0</span>)</h3>
+            <button class="cart-modal-close" id="closeCartBtn">&times;</button>
+        </div>
+        <div class="cart-modal-body">
+            <!-- <div class="cart-warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>¡Sin cobertura! Revisa tu dirección</span>
+            </div> -->
+            <div class="cart-items-list" id="cartItemsList">
+                <!-- Los items del carrito se generarán dinámicamente -->
+            </div>
+        </div>
+        <div class="cart-modal-footer">
+            <div class="cart-subtotal">
+                <span class="cart-subtotal-label">Total</span>
+                <span class="cart-subtotal-value">S/ 0.00</span>
+            </div>
+            <!-- <button class="cart-address-btn">
+                Ingresa tu dirección o selecciona un local para continuar
+            </button> -->
+            <button class="cart-continue-btn" id="cartContinueBtn">
+                Continuar
+            </button>
+        </div>
+    </div>
+    
+    <!-- Modal de detalle de producto -->
+    <div class="product-detail-overlay" id="productDetailOverlay"></div>
+    <div class="product-detail-modal" id="productDetailModal">
+        <div class="product-detail-close">
+            <button class="product-detail-close-btn" id="closeProductDetailBtn">&times;</button>
+        </div>
+        <div class="product-detail-content" id="productDetailContent">
+            <!-- Contenido dinámico del producto -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid container">
+            <div class="footer-column accordion-item">
+                <h4 class="accordion-header">
+                    Nuestros Productos
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </h4>
+                <ul class="accordion-content">
+                    <li><a href="menu.html#para-picar">Para Picar</a></li>
+                    <li><a href="menu.html#leche-tigres">LECHE(PARA TIGRES)</a></li>
+                    <li><a href="menu.html#festival-causas">Festival de Causas</a></li>
+                    <li><a href="menu.html#frialdad">Frialdad</a></li>
+                    <li><a href="menu.html#carretilleros">Carretilleros</a></li>
+                    <li><a href="menu.html#trio-agallas">Trio Agallas</a></li>
+                    <li><a href="menu.html#rondas-marinas">Rondas Marinas</a></li>
+                    <li><a href="menu.html#arroces">Arroces</a></li>
+                    <li><a href="menu.html#chaufas">Chaufas</a></li>
+                </ul>
+            </div>            
+            <div class="footer-column accordion-item">
+                 <h4 class="accordion-header">
+                    Ayuda
+                    <i class="fas fa-chevron-down accordion-icon"></i>
+                </h4>                <ul class="accordion-content">
+                    <li><a href="terminos-condiciones.html">Términos y Condiciones</a></li>
+                    <li><a href="politica-privacidad.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <a href="libro-reclamaciones.html" style="text-decoration: none; color: var(--color-primary); text-align: center; display: inline-block;">
+                    <h4>Libro de Reclamaciones</h4>
+                    <img src="img/Libro_De_Reclamaciones.webp" alt="Libro de Reclamaciones" style="width: 150px; height: auto; display: block; margin: 0 auto;">
+                </a>                
+                <h4 class="mt-2">Métodos de Pago</h4>                
+                <ul class="payment-methods">
+                    <li>
+                        <img src="svg/visa-classic-svgrepo-com.svg" alt="Visa" style="width: 40px; height: auto; vertical-align: middle; margin-right: 5px;">
+                        Visa
+                    </li>
+                    <li>
+                        <img src="svg/mastercard-full-svgrepo-com.svg" alt="Mastercard" style="width: 40px; height: auto; vertical-align: middle; margin-right: 5px;">
+                        Mastercard
+                    </li>
+                    <li>
+                        <img src="svg/Yape Logo Vector.svg" alt="Yape" style="width: 40px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                        Yape
+                    </li>
+                </ul>
+                <!-- <h4 class="mt-2">Agallas App</h4> -->
+            </div>
+             <div class="footer-column">
+                <img src="img/Logo Azul.png" alt="Agallas Logo" class="footer-logo">
+                <h4>Síguenos en</h4>
+                 <div class="social-icons">
+                    <a href="https://www.facebook.com/agallas.barra.cevichera" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@barra.cevichera.agallas"target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/agallas.barra.cevichera/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Todos los derechos reservados.</p>
+        </div>
+    </footer>    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Nueva estructura modular -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

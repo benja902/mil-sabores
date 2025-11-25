@@ -1,0 +1,235 @@
+/* Estilos para páginas legales - Simplificado */
+
+.legal-content {
+    padding: 120px 0 60px;
+    background-color: #f8f9fa;
+}
+
+.legal-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Contenedor especial para libro de reclamaciones */
+.legal-container.libro {
+    max-width: 900px;
+}
+
+/* Títulos principales h1 */
+h1 {
+    color: #1a237e;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Subtítulos y fechas */
+.subtitle, .update-date, .last-updated {
+    color: #666;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Secciones de contenido */
+.legal-section, .form-section {
+    margin-bottom: 30px;
+}
+
+.legal-section h2, .legal-section h3, .form-section h3 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.form-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.legal-section p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.legal-section ul {
+    padding-left: 20px;
+}
+
+.legal-section li {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Botón volver */
+.back-btn {
+    background: #1a237e;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    transition: background 0.3s;
+}
+
+.back-btn:hover {
+    background: var(--color-secondary);
+    color: white;
+}
+
+/* Header especial para libro de reclamaciones */
+.header-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-image {
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Estilos de formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #1a237e;
+    box-shadow: 0 0 0 0.2rem rgba(26, 35, 126, 0.25);
+}
+
+.required {
+    color: #dc3545;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.btn-submit {
+    background: #1a237e;
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background: var(--color-secondary);
+    color: #1a237e;
+}
+
+.info-box {
+    background-color: #e3f2fd;
+    border-left: 4px solid #1a237e;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0 8px 8px 0;
+}
+
+.info-box h4 {
+    color: #1a237e;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .legal-section h2, .legal-section h3, .form-section h3 {
+        font-size: 1.2rem;
+    }
+    
+    .legal-section p {
+        font-size: 0.9rem;
+    }
+    
+    .legal-section li {
+        font-size: 0.9rem;
+    }
+    
+    .back-btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    
+    .legal-container {
+        padding: 25px;
+        margin: 0 15px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-control {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    
+    .btn-submit {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+    
+    .info-box {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .subtitle {
+        font-size: 1rem;
+    }
+}
