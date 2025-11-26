@@ -53,7 +53,7 @@ class SwiperManager {
      * Inicializa los swipers de productos
      */
     initializeProductSwipers() {
-        const productSections = ['#recomendados-section', '#promociones-section'];
+        const productSections = ['#recomendados-section', '#sabores-peruanos-section'];
         
         productSections.forEach(sectionId => {
             this.initProductSwiper(sectionId);
