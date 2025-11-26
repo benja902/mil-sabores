@@ -375,7 +375,7 @@
                 </div> <!-- Cerrar carousel-nav-container -->
             </div>
         </section>
-        <section class="ubicacion-section">
+        <section class="ubicacion-section" id="ubicacion-section">
             <div class="ubicacion-content container">   
                 <div class="text-center mb-4">
                     <h2 class="section-title text-white">¡Visítanos en Huánuco!</h2>
@@ -412,18 +412,6 @@
                                     <div class="detail-content">
                                         <h5>Teléfono</h5>
                                         <span>+51 929 716 729</span>
-                                        <a href="tel:+51929716729" class="quick-action">Llamar</a>
-                                    </div>
-                                </div>
-                                
-                                <div class="detail-item">
-                                    <div class="detail-icon">
-                                        <i class="fab fa-whatsapp"></i>
-                                    </div>
-                                    <div class="detail-content">
-                                        <h5>WhatsApp</h5>
-                                        <span>Escríbenos directamente</span>
-                                        <a href="https://wa.me/51929716729" target="_blank" class="quick-action whatsapp">Escribir</a>
                                     </div>
                                 </div>
                                 
@@ -552,6 +540,56 @@
             </button>
         </div>
     </div>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section class="contacto-section" id="contacto-section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">¿Tienes alguna pregunta? Escríbenos y te responderemos lo antes posible</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contacto-form" id="contactoForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="nombre" class="form-label">Nombre completo</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="asunto" class="form-label">Asunto</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto" required>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="text-center">
+                            <button type="submit" class="btn-contacto">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Enviar mensaje
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- NUEVO FOOTER DETALLADO -->
     <footer>
